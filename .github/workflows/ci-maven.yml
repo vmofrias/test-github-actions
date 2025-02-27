@@ -26,11 +26,6 @@ jobs:
       with:
         username: ${{ vars.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-    - name: Listar arquivos gerados
-      run: ls -l
-
-    - name: Listar arquivos gerados
-      run: ls -la target
 
     - name: Build and push
       uses: docker/build-push-action@v6
