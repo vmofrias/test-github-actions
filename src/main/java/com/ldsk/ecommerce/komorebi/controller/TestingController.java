@@ -15,10 +15,6 @@ public class TestingController {
     @GetMapping
     public ResponseEntity<String> getTest() {
 
-        log.debug("Estou debugando.");
-
-        log.info("Estou lhe informando algo.");
-
         return ResponseEntity.status(HttpStatus.OK).body("Requisição recebida!");
     }
 }
